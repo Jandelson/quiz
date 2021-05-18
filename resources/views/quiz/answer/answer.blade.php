@@ -1,4 +1,4 @@
-@extends('quiz/layout')
+@extends('layouts.app')
 @section('conteudo')
 <div class="d-flex justify-content-center row">
         <div class="col-md-10 col-lg-10">

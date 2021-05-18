@@ -1,4 +1,4 @@
-@extends('quiz.layout')
+@extends('layouts.app')
 @section('conteudo')
     <div class="container">
         <form action="{{ route('register_quiz') }}" method="POST">

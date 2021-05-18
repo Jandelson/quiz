@@ -20,13 +20,14 @@ class ApisController extends Controller
                 $array[$i]['questions'] = Arr::shuffle($array[$i]['questions']);
             }
 
-            return response()->json([
-                'data' => [
-                    $array
-                ]
-            ], 200);
+            return response()->json(['data' => $array], 200);
         } catch (\Exception $e) {
             return response()->json(['erro: ' => $e->getMessage()], 401);
         }
+    }
+
+    public function datatable()
+    {
+        return view('api.datatable');
     }
 }

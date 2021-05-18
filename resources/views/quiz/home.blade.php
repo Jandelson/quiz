@@ -1,4 +1,4 @@
-@extends('quiz/layout')
+@extends('layouts.app')
 @section('conteudo')
 @if (session('status'))
 <div class="alert alert-success alert-dismissible fade show" role="alert">
